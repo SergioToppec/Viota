@@ -7,7 +7,7 @@ export default function HeroSection() {
               Transforma tus reuniones en <span className="text-blue-300">minutas profesionales</span>
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Automatiza la creación de minutas con IA, ahorra tiempo y mantén registros impecables.
+              Automatiza la creación de minutas con IA, ahorra tiempo y mantén buenos registros.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
 
