@@ -1,6 +1,6 @@
 export const generateMinuta = async (apuntes: string): Promise<string> => {
   try {
-    const response = await fetch(import.meta.env.VITE_MINUTA_API_URL || "https://minuta-inteligente-azure.azurewebsites.net/api/procesarJson?", {
+    const response = await fetch(import.meta.env.VITE_MINUTA_API_URL || "https://minuta-inteligente-azure.azurewebsites.net/api/procesarJson?czHXToB4MhprZkK29GyZfpzPhzpv1Plin0e5VlueRWvAAzFuGxiNgA==", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ apuntes }),
