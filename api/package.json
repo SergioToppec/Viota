@@ -1,0 +1,17 @@
+{
+  "name": "viota-api",
+  "version": "1.0.0",
+  "description": "Vercel Serverless Functions para Viota",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0",
+    "openai": "^4.96.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

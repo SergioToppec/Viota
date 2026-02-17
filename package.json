@@ -1,0 +1,16 @@
+{
+  "name": "viota",
+  "version": "1.0.0",
+  "description": "Generador de Minutas con IA - Migrado a Vercel",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "cd frontend && npm run build",
+    "deploy": "vercel",
+    "deploy:prod": "vercel --prod",
+    "install:all": "cd frontend && npm install && cd ../api && npm install"
+  },
+  "keywords": ["minutas", "openai", "vercel"],
+  "author": "",
+  "license": "ISC"
+}
