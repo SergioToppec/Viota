@@ -4,10 +4,9 @@ import { exportToWord } from "./exportUtils/wordExporter";
 
 interface MinutaActionsProps {
   minuta: string;
-  minutaRef: MutableRefObject<HTMLDivElement | null>;
 }
 
-export default function MinutaActions({ minuta, minutaRef }: MinutaActionsProps) {
+export default function MinutaActions({ minuta }: MinutaActionsProps) {
   const [copiado, setCopiado] = useState(false);
 
   const copiarMinuta = () => {
