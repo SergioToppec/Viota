@@ -1,4 +1,4 @@
-import { MutableRefObject, useState } from "react";
+import { useState } from "react";
 import { exportToPDF } from "./exportUtils/pdfExporter";
 import { exportToWord } from "./exportUtils/wordExporter";
 
