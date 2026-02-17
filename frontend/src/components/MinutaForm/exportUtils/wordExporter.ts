@@ -1,4 +1,4 @@
-import { Document, Packer, Paragraph, HeadingLevel, Table, TableRow, TableCell, WidthType } from "docx";
+import { Document, Packer, Paragraph, HeadingLevel, Table, TableRow, TableCell, WidthType, TextRun } from "docx";
 
 export const exportToWord = async (minuta: string) => {
   if (!minuta) return;
@@ -67,8 +67,7 @@ export const exportToWord = async (minuta: string) => {
               new TableRow({
                 children: headers.map(header => new TableCell({
                   children: [new Paragraph({
-                    text: header,
-                    bold: true
+                    children: [new TextRun({ text: header, bold: true })]
                   })],
                   shading: { fill: 'DDDDDD' },
                   margins: { top: 100, bottom: 100 }

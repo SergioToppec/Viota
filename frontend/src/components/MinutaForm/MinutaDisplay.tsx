@@ -1,10 +1,9 @@
 import { useRef } from "react";
 import MinutaActions from "./MinutaActions";
 import { formatMinutaText } from "./formatMinutaText";
-import { MinutaDisplayFormat } from "../../types";
 
 interface MinutaDisplayProps {
-  minuta: MinutaDisplayFormat;
+  minuta: string;
 }
 
 export default function MinutaDisplay({ minuta }: MinutaDisplayProps) {

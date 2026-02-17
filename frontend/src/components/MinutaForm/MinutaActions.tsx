@@ -43,7 +43,7 @@ export default function MinutaActions({ minuta, minutaRef }: MinutaActionsProps)
           )}
         </button>
         <button
-          onClick={() => exportToPDF(minuta, minutaRef)}
+          onClick={() => exportToPDF(minuta)}
           className="flex items-center text-sm text-red-600 hover:text-red-800 transition px-3 py-1 bg-red-50 rounded"
         >
           <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
