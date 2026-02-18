@@ -1,22 +1,17 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-import OpenAI from 'openai';
+const { OpenAI } = require('openai');
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-interface RequestBody {
-  apuntes: string;
-}
-
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+module.exports = async function handler(req, res) {
   // Solo permitir método POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Método no permitido' });
   }
 
   try {
-    const { apuntes } = req.body as RequestBody;
+    const { apuntes } = req.body;
 
     if (!apuntes?.trim()) {
       return res.status(400).json({ error: "El campo 'apuntes' no puede estar vacío." });
@@ -47,4 +42,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       error: "Error al generar la minuta. Revisa tu saldo en OpenAI." 
     });
   }
-}
+};
