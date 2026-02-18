@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "@vercel/analytics": "^1.6.1",
+    "@vercel/node": "^3.2.29",
     "docx": "^9.4.1",
     "html2canvas": "^1.4.1",
     "jspdf": "^3.0.1",
