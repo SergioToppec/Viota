@@ -39,30 +39,30 @@ module.exports = async function handler(req, res) {
 
 # Minuta de Reunión
 
-## 📅 Fecha
+## Fecha
 [Fecha de la reunión - si no se proporciona, usar la fecha actual]
 
-## 🎯 Objetivo
+## Objetivo
 [Breve descripción del propósito de la reunión]
 
-## 👥 Participantes
+## Participantes
 - [Nombre 1]
 - [Nombre 2]
 - [Agregar todos los participantes mencionados]
 
-## 📝 Temas Tratados
+## Temas Tratados
 - **[Tema 1]:** [Descripción o puntos clave]
 - **[Tema 2]:** [Descripción o puntos clave]
 - [Continuar con todos los temas discutidos]
 
-## ✅ Acuerdos y Compromisos
+## Acuerdos y Compromisos
 
 | Compromiso | Responsable | Fecha Límite |
 |------------|-------------|--------------|
 | [Descripción del compromiso 1] | [Nombre] | [Fecha] |
 | [Descripción del compromiso 2] | [Nombre] | [Fecha] |
 
-## 📌 Notas Adicionales
+## Notas Adicionales
 [Cualquier información relevante adicional]
 
 ---
@@ -71,8 +71,7 @@ REGLAS IMPORTANTES:
 1. SIEMPRE incluye la tabla de Acuerdos, incluso si solo hay un compromiso
 2. Si no hay acuerdos explícitos, infiere acciones de los temas discutidos
 3. Si no se mencionan fechas límite, sugiere plazos razonables (ej: "1 semana", "15 días")
-4. Mantén un tono profesional y claro
-5. Usa los emojis indicados en cada sección`
+4. Mantén un tono profesional y claro`
         },
         {
           role: "user",
