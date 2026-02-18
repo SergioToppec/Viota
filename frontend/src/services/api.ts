@@ -11,10 +11,10 @@ export const generateMinuta = async (apuntes: string): Promise<string> => {
       return data.minuta;
     } else {
       console.error(data);
-      return "❌ Error del servidor al generar la minuta.";
+      return "Error del servidor al generar la minuta.";
     }
   } catch (error) {
     console.error("Error:", error);
-    return "❌ Error al conectar con el servidor.";
+    return "Error al conectar con el servidor.";
   }
 };

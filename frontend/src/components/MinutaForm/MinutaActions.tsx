@@ -19,7 +19,7 @@ export default function MinutaActions({ minuta }: MinutaActionsProps) {
 
   return (
     <div className="flex justify-between items-center mb-4">
-      <h2 className="text-xl font-bold text-gray-800">📋 Minuta Generada</h2>
+      <h2 className="text-xl font-bold text-gray-800">Minuta Generada</h2>
       <div className="flex space-x-2">
         <button
           onClick={copiarMinuta}
