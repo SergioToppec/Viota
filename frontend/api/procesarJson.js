@@ -1,9 +1,3 @@
-const OpenAI = require('openai').default;
-
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 module.exports = async function handler(req, res) {
   // Solo permitir método POST
   if (req.method !== 'POST') {
@@ -11,6 +5,13 @@ module.exports = async function handler(req, res) {
   }
 
   try {
+    // Importación dinámica de OpenAI
+    const { default: OpenAI } = await import('openai');
+    
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+
     const { apuntes } = req.body;
 
     if (!apuntes?.trim()) {
@@ -37,9 +38,10 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ minuta });
 
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error completo:", error);
     return res.status(500).json({ 
-      error: "Error al generar la minuta. Revisa tu saldo en OpenAI." 
+      error: "Error al generar la minuta. Revisa tu saldo en OpenAI.",
+      details: error.message 
     });
   }
 };
